@@ -14,6 +14,10 @@
 	</aui-header>
 </div>
 
+<hr>
+<router-outlet></router-outlet>
+<hr>
+
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <h1>
@@ -156,12 +160,6 @@
 		</div>
 		<pre class="a-pre">{{ dateForm.controls['inputDate'].value | json }}</pre>
 	</form>
-</div>
-
-<!-- analytics -->
-<div class="u-margin-bottom col-md-6 col-xs-12">
-  <h2 class="h4 u-margin-bottom">Analytics</h2>
-  <button gaEvent>Switch gender to male with directive</button>
 </div>
 
 <!-- local storage -->
@@ -440,8 +438,6 @@
 		<dd><pre>{{ window?.innerWidth }}</pre></dd>
 </dl>
 </div>
-
-<router-outlet></router-outlet>
 
 <aui-footer>
   <div auiFooterContent>

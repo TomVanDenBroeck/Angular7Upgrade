@@ -68,12 +68,15 @@ import { AnalyticsModule } from '@acpaas-ui/ngx-components/analytics';
 
 import { ContextModule } from '@acpaas-ui/ngx-components/context';
 
+import { HomePageComponent } from './pages/home';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     AUIDemoModalComponent,
     TableActionComponent,
+    HomePageComponent,
   ],
   imports: [
     AnalyticsModule,
@@ -103,15 +106,15 @@ import { ContextModule } from '@acpaas-ui/ngx-components/context';
         'Januari', 'Februari', 'Maart', 'April', 'Mei', 'Juni', 'Juli', 'Augustus', 'September', 'Oktober', 'November', 'December'
       ]),
     CodeSnippetModule,
-    ContextModule.forRoot({
-      useTitleSuffix: false,
-      extendTitle: false,
-      titleDelimiter: ' | ',
-      defaults: {
-        titleSuffix: '',
-      },
-      routerContext: true, // indien true krijg je error!!
-    }),
+    // ContextModule.forRoot({
+    //   useTitleSuffix: false,
+    //   extendTitle: false,
+    //   titleDelimiter: ' | ',
+    //   defaults: {
+    //     titleSuffix: '',
+    //   },
+    //   routerContext: true, // indien true krijg je error!!
+    // }),
     FlyoutModule,
     FlyoutButtonModule,
     RangeSliderModule,

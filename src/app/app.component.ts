@@ -22,14 +22,12 @@ import { ModalService } from '@acpaas-ui/ngx-components/layout';
 
 import { TableActionComponent } from '../app/components/table-action.component';
 
-import { ContextService } from '@acpaas-ui/ngx-components/context';
+// import { ContextService } from '@acpaas-ui/ngx-components/context';
 // import { Meta, Title } from '@angular/platform-browser';
 
 import { LocalstorageService } from '@acpaas-ui/ngx-components/localstorage';
 
 import { WINDOW } from '@acpaas-ui/ngx-components/utils';
-
-import { GAService } from '@acpaas-ui/ngx-components/analytics'; // google analytics = GA
 
 
 @Component({
@@ -38,7 +36,7 @@ import { GAService } from '@acpaas-ui/ngx-components/analytics'; // google analy
   styleUrls: ['./app.component.scss'],
   providers: [
     DatePipe,
-    ContextService,
+    // ContextService,
     LocalstorageService,
   ],
 })
@@ -48,9 +46,8 @@ export class AppComponent implements OnInit {
               private datePipe: DatePipe, public filterService: FilterService,
               private modalService: ModalService,
               @Inject(WINDOW) public window,
-              private contextService: ContextService,
+              // private contextService: ContextService,
               private localstorageService: LocalstorageService,
-              // private gaService: GAService
               // private meta: Meta, private titleService: Title
     ) {
     this.cookieconsentService.init({});
@@ -357,9 +354,9 @@ export class AppComponent implements OnInit {
     }
 
     public setTitle() {
-      this.contextService.updateContext({
-        title: 'New context example title',
-      });
+      // this.contextService.updateContext({
+      //   title: 'New context example title',
+      // });
       // this.pageTitle = this.titleService.getTitle();
     }
 
