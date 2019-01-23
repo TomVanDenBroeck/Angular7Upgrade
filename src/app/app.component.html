@@ -1,0 +1,490 @@
+<div class="u-margin-bottom">
+	<aui-header>
+		<div auiHeaderContent>
+			<div auiHeaderLogo class="o-header__wrapper">
+				<aui-logo title="Example" src="https://robohash.org/acpaas-ui"></aui-logo>
+				<a class="o-header__link">Example</a>
+			</div>
+		</div>
+		<div auiHeaderMenuItem>
+			<a href="http://github.com/digipolisantwerp/acpaas-ui_angular" class="a-button a-button--navigation has-icon-left" target="_blank">
+				<i class="fa fa-github"></i>ACPaaS UI on GitHub
+			</a>
+		</div>
+	</aui-header>
+</div>
+
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+
+  </h1>
+  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+</div>
+<h2>Here are some links to help you start: </h2>
+<ul>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
+  </li>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
+  </li>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
+  </li>
+</ul>
+
+<div class="u-margin-bottom-xx">
+	<aui-hero>
+		<div auiHeroCard>
+			<h1>Welcome to {{ title }}!</h1>
+			<p class="u-margin-top-xs">Tag line</p>
+		</div>
+		<div auiHeroCta>
+			<div class="buttons">
+				<a class="a-button">Call to action</a>
+			</div>
+		</div>
+	</aui-hero>
+</div>
+
+<!-- Avatar -->
+<div class="u-margin-bottom col-md-6 col-xs-12">
+<h2 class="h4 u-margin-bottom">Avatar</h2>
+<aui-avatar image="https://robohash.org/acpaas-ui" title="My image"></aui-avatar>
+</div>
+
+<!-- calendar -->
+<div class="u-margin-bottom col-md-6 col-xs-12">
+    <h2 class="h4 u-margin-bottom">Calendar</h2>
+  <div class="m-datepicker is-open">
+    <aui-calendar
+      [range]="range"
+      [selectedDate]="clickedDate"
+      (selectDate)="selectDate($event)">
+    </aui-calendar>
+  </div>
+</div>
+
+<!-- context -->
+<div class="u-margin-bottom col-md-6 col-xs-12">
+    <h2 class="h4 u-margin-bottom">Context</h2>
+		<div class="m-alert">
+			Click on "Set title" to update the page title.
+		</div>
+    <button class="a-button" (click)="setTitle()">Set title</button>
+ </div>
+
+
+<!-- Flyout -->
+<div class="u-margin-bottom col-md-6 col-xs-12">
+    <h2 class="h4 u-margin-bottom">Flyout</h2>
+	<div auiFlyout size="small" align="left">
+		<button class="a-button" auiFlyoutAction>Open flyout</button>
+		<div auiFlyoutZone class="has-padding u-text-center">
+			<div class="u-margin-bottom">
+				<p>Hello world!</p>
+			</div>
+			<div>
+				<button class="a-button" auiFlyoutClose>Close flyout</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Flyout button -->
+<div class="u-margin-bottom col-md-6 col-xs-12">
+    <h2 class="h4 u-margin-bottom">Flyout button</h2>
+	<aui-flyout-button
+		icon="fa fa-user"
+		label="Open flyout"
+		align="right"
+		title="Click to open!"
+		outline=true
+		flyoutSize="small"
+		buttonSize="large">
+		<div class="u-margin u-text-center">
+			<p>Hello world!</p>
+		</div>
+	</aui-flyout-button>
+</div>
+
+<!-- code-snippet -->
+<div class="u-margin-bottom col-md-6 col-xs-12">
+    <h2 class="h4 u-margin-bottom">Code-snippet</h2>
+<aui-code-snippet [codeSnippet]="codeExampleJSON"></aui-code-snippet>
+</div>
+
+<!-- range slider -->
+<div class="u-margin-bottom-lg col-md-6 col-xs-12">
+    <h2 class="h4 u-margin-bottom">Range slider</h2>
+<div class="example u-margin">
+  <aui-range-slider></aui-range-slider>
+</div>
+</div>
+
+<div class="u-margin-bottom-lg col-md-6 col-xs-12">
+  <aui-range-slider
+      step="20"
+      labelAfter="%">
+  </aui-range-slider>
+</div>
+
+<div class="example u-margin col-md-6 col-xs-12">
+  <aui-range-slider [(ngModel)]="mySlider" min="300" max="600" labelBefore="€">
+  </aui-range-slider>
+</div>
+
+<!-- datepicker -->
+<div class="u-margin-bottom col-md-6 col-xs-12">
+    <h2 class="h4 u-margin-bottom">Datepicker</h2>
+	<form [formGroup]="dateForm">
+		<div class="a-input has-icon-right u-margin-bottom-xs" [ngClass]="{'has-error': dateForm.controls.inputDate.dirty && dateForm.controls.inputDate.invalid}">
+			<label class="a-input__label" for="input-datepicker">Pick a date</label>
+			<aui-datepicker
+				id="input-datepicker"
+				name="input-datepicker"
+				autocomplete="off"
+				placeholder="dd/mm/jjjj"
+				formControlName="inputDate"
+				[range]="dateRange">
+			</aui-datepicker>
+			<div *ngIf="dateForm.controls['inputDate'].errors" class="u-text-danger u-margin-top-xs u-margin-bottom">
+				<p *ngIf="dateForm.controls['inputDate'].errors.format">{{ dateForm.controls['inputDate'].errors.format }}</p>
+				<p *ngIf="dateForm.controls['inputDate'].errors.range">{{ dateForm.controls['inputDate'].errors.range }}</p>
+			</div>
+		</div>
+		<pre class="a-pre">{{ dateForm.controls['inputDate'].value | json }}</pre>
+	</form>
+</div>
+
+<!-- analytics -->
+<div class="u-margin-bottom col-md-6 col-xs-12">
+  <h2 class="h4 u-margin-bottom">Analytics</h2>
+  <button gaEvent>Switch gender to male with directive</button>
+</div>
+
+<!-- local storage -->
+<div class="u-margin-bottom col-md-6 col-xs-12">
+  <h2 class="h4 u-margin-bottom">Search-filer</h2>
+  <div class="u-margin-bottom">
+    <button (click)="loggedIn()" class="a-button u-margin-right">
+      Log in
+    </button>
+    <button (click)="loggedOut()" class="a-button u-margin-right">
+      Log out
+    </button>
+    <button (click)="init()" class="a-button u-margin-right">
+      Count clicks
+    </button>
+  </div>
+
+  <div class="u-margin-bottom">
+    <button (click)="getItem()" class="a-button u-margin-right">
+      Get from local storage
+    </button>
+    <button (click)="clear()" class="a-button">
+      Clear local storage
+    </button>
+  </div>
+
+  <div class="u-margin-bottom">
+    <p>{{ this.item }}</p>
+  </div>
+
+  <div class="u-margin-bottom">
+    <p>You clicked the count clicks button this many times: {{ this.timesUsed }}</p>
+  </div>
+</div>
+
+<!-- search filter -->
+<div class="u-margin-bottom col-md-6 col-xs-12">
+    <h2 class="h4 u-margin-bottom">Search-filer</h2>
+	<aui-search-filter
+		id="test"
+		name="test"
+		label="Find stuff"
+		labelDeselect="Clear stuff"
+		labelResults=""
+		labelNoResults="Couldn't find stuff!"
+		placeholder="Look for stuff"
+		inputDelay="0"
+		[choices]="stuff"
+		[showAllByDefault]="true">
+	</aui-search-filter>
+</div>
+
+<!-- timepicker -->
+<div class="u-margin-bottom col-md-6 col-xs-12">
+    <h2 class="h4 u-margin-bottom">Timepicker</h2>
+	<aui-timepicker
+		size="small"
+		[(ngModel)]="time1">
+	</aui-timepicker>
+</div>
+
+<!-- mask -->
+<div class="u-margin-bottom col-md-6 col-xs-12">
+    <h2 class="h4 u-margin-bottom">Mask</h2>
+  <div class="a-input">
+    <input type="text" placeholder="BE99 9999 9999 9999" auiMask="BE99 9999 9999 9999" />
+  </div>
+</div>
+
+<!-- upload -->
+<div class="u-margin-bottom col-md-6 col-xs-12">
+    <h2 class="h4 u-margin-bottom">Upload</h2>
+	<aui-upload [options]="dropzone1" (selectUploadedFiles)="onUpload($event)">
+		<div class="m-upload__message">
+			Drag your files here or click to upload
+		</div>
+		<div class="m-upload__description">
+			Optional description message
+		</div>
+	</aui-upload>
+</div>
+
+<!-- WYSIWYG -->
+<div class="u-margin-bottom col-md-6 col-xs-12">
+    <h2 class="h4 u-margin-bottom">WYSIWYG</h2>
+  <div class="a-input">
+  <aui-wysiwyg
+    [placeholder]="'Type some richt text here…'"
+    [availableTags]="'h2;h3;h4;h5;h6;p'"
+    [uiColour]="'#C0C0C0'"
+    [debounce]="500"
+    (emitContent)="getContent($event)">
+  </aui-wysiwyg>
+</div>
+</div>
+
+<div class="u-margin-bottom col-md-6 col-xs-12">
+	<div class="a-input">
+		<div class="a-input__wrapper">
+			<aui-auto-complete
+				id="hero-names"
+				placeholder="Choose your hero…"
+				label="name"
+				value=""
+				minCharacters = "3"
+				clearInvalid="true"
+				showAllByDefault="true"
+				[data]="heroList"
+				(select)="setSelectedItem1($event)">
+			</aui-auto-complete>
+		</div>
+	</div>
+	<p class="u-margin-top"><strong>Selected hero</strong>: {{ selectedItem1 }}</p>
+</div>
+
+<!-- Modal -->
+<div class="u-margin-bottom col-md-6 col-xs-12">
+<h2 class="h4 u-margin-bottom">Modal</h2>
+<div class="u-margin-bottom-xx">
+	<button class="a-button"
+		(click)="openModal()">
+		Test modal
+	</button>
+</div>
+</div>
+
+<div class="u-margin-bottom col-md-6 col-xs-12">
+    <h2 class="h4 u-margin-bottom">Pane</h2>
+	<button class="a-button" (click)="myPane.togglePane()">Toggle pane</button>
+	<button class="a-button" (click)="myPane.openPane()">Open pane</button>
+	<p class="u-margin-top-xs">The pane is <strong>{{ pane }}</strong>.</p>
+	<aui-pane #myPane
+		[side]="'left'"
+		[opened]="opened"
+		[backdrop]="backdrop"
+		(open)="onOpen()"
+		(close)="onClose()">
+		Pane content
+		<button class="a-button" (click)="myPane.closePane()">Close pane</button>
+	</aui-pane>
+</div>
+
+<!-- Map -->
+<div class="u-margin-bottom col-md-6 col-xs-12">
+    <h2 class="h4 u-margin-bottom">Map</h2>
+	<aui-leaflet [leafletMap]="leafletMap" [hasSidebar]="true">
+		<div controls top left>
+			<aui-leaflet-drag-control></aui-leaflet-drag-control>
+			<aui-leaflet-draw-control></aui-leaflet-draw-control>
+		</div>
+		<div controls top right>
+			<aui-leaflet-fullscreen-control></aui-leaflet-fullscreen-control>
+		</div>
+		<div controls bottom left>
+			<aui-leaflet-locate-control></aui-leaflet-locate-control>
+		</div>
+		<div controls bottom right>
+			<aui-leaflet-zoom-control></aui-leaflet-zoom-control>
+		</div>
+		<div>
+			Content displayed in sidebar
+		</div>
+	</aui-leaflet>
+</div>
+
+<div class="u-margin-bottom col-md-6 col-xs-12">
+    <h2 class="h4 u-margin-bottom">Pagination</h2>
+	<h3 class="h5">Heroes</h3>
+	<ul>
+		<li *ngFor="let hero of visibleHeroes">{{ hero.name }}</li>
+	</ul>
+	<aui-pagination
+		[currentPage]="currentPage"
+		[itemsPerPage]="itemsPerPage"
+		[totalValues]="totalValues"
+		styling="basic"
+		display="numbers"
+		(update)="onUpdatePage($event)">
+	</aui-pagination>
+</div>
+
+<div class="u-margin-bottom col-md-6 col-xs-12">
+    <h2 class="h4 u-margin-bottom">Progress-bar</h2>
+<div class="a-input">
+	<aui-progress-bar
+		[value]="uploadProgress"
+		[max]="maxValue">
+	</aui-progress-bar>
+</div>
+</div>
+
+<div class="u-margin-bottom col-md-6 col-xs-12">
+    <h2 class="h4 u-margin-bottom">Selectable list</h2>
+	<h3 class="h5 u-margin-bottom">Select your hero</h3>
+	<aui-selectable-list [items]="heroes2" [index]="index" (selected)="onSelect($event)">
+		<ng-template let-item="item">
+			Template for: <b>{{ item.name }}</b>
+		</ng-template>
+	</aui-selectable-list>
+	<p class="u-margin-top"><strong>Active hero</strong>: {{ activeHero.name }}</p>
+</div>
+
+<div class="u-margin-bottom col-md-6 col-xs-12">
+    <h2 class="h4 u-margin-bottom">Table</h2>
+	<aui-table
+		noDataMessage="There is no data!"
+		loadDataMessage="Loading..."
+		noColumsMessage="There are no columns!"
+		[loading]="loading"
+		[columns]="columns"
+		[rows]="rows">
+	</aui-table>
+</div>
+
+<div class="u-margin-bottom col-md-6 col-xs-12">
+<h2 class="h4 u-margin-bottom">Checkbox filter</h2>
+<div class="u-margin-bottom">
+	<aui-checkbox-filter [filter]="checkFilter" (update)="changeCheckFilter($event)"></aui-checkbox-filter>
+</div>
+<div class="u-margin-bottom">
+	<pre>{{ checkResults | json }}</pre>
+</div>
+
+<h2 class="h4 u-margin-bottom">Input filter</h2>
+<div class="u-margin-bottom">
+	<aui-input-filter [filter]="searchFilter" (update)="changeSearchFilter($event)"></aui-input-filter>
+</div>
+<div class="u-margin-bottom">
+	<pre>{{ searchResults | json }}</pre>
+</div>
+
+<h2 class="h4 u-margin-bottom">Select filter</h2>
+<div class="u-margin-bottom">
+	<aui-select-filter [filter]="selectFilter" (update)="changeSelectFilter($event)"></aui-select-filter>
+</div>
+<div class="u-margin-bottom">
+	<pre>{{ selectResults | json }}</pre>
+</div>
+
+<h2 class="h4 u-margin-bottom">Labels</h2>
+<div class="u-margin-bottom-lg">
+	<p class="u-text-bold">String interpolated through function:</p>
+	<pre>{{ interpolateValue() }}</pre>
+</div>
+
+<h3 class="h5 u-margin-bottom">InterpolateLabelPipe</h3>
+<div class="u-margin-bottom-lg">
+  <p class="u-text-bold">String interpolated through pipe:</p>
+<pre><span [innerHTML]="interpolateMessage | interpolateLabel:interpolateString "></span></pre>
+</div>
+
+<h3 class="h5 u-margin-bottom">PluralizeLabelPipe</h3>
+<div class="u-margin-bottom-lg">
+	<p class="u-text-bold">Interpolated string in {{ amount.description }}:</p>
+	<pre>{{ pluralizeMail | pluralizeLabel:amount.value }}</pre>
+</div>
+
+<h3 class="h5 u-margin-bottom">Combine label pipes</h3>
+<div class="u-margin-bottom">
+	<p class="u-text-bold">Interpolated and pluralized string:</p>
+	<pre>{{ pluralizeMessage | pluralizeLabel:remainingMessages.remaining | interpolateLabel:interpolateString }}</pre>
+</div>
+
+</div>
+
+<!-- Window -->
+<div class="u-margin-bottom col-md-6 col-xs-12">
+    <h2 class="h4 u-margin-bottom">Window</h2>
+<p class="u-margin-bottom-xs">
+	These are the window's current height and width:
+</p>
+<dl class="a-definition-list u-margin-bottom">
+	<dt>Height:</dt>
+		<dd><pre>{{ window?.innerHeight }}</pre></dd>
+	<dt>Width:</dt>
+		<dd><pre>{{ window?.innerWidth }}</pre></dd>
+</dl>
+</div>
+
+<router-outlet></router-outlet>
+
+<aui-footer>
+  <div auiFooterContent>
+      <div class="u-container">
+          <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-3 u-margin-bottom-xs u-margin-top-xs">
+                  <h3 class="h5">ACPaaS UI</h3>
+                  <ul class="a-list a-list--unstyled">
+                      <li><a href="https://github.com/digipolisantwerp/acpaas-ui_react" class="has-icon-right" target="_blank">React library<i class="fa fa-external-link"></i></a></li>
+                      <li><a href="https://a-ui.github.io/core_branding_scss" class="has-icon-right" target="_blank">Core branding<i class="fa fa-external-link"></i></a></li>
+                  </ul>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3 u-margin-bottom-xs u-margin-top-xs">
+                  <h3 class="h5">ACPaaS</h3>
+                  <ul class="a-list a-list--unstyled">
+                      <li><a href="https://acpaas.digipolis.be/" class="has-icon-right" target="_blank">ACPaaS Portal<i class="fa fa-external-link"></i></a></li>
+                      <li><a href="https://acpaas.digipolis.be/nl/support?product=acpaas-ui" class="has-icon-right" target="_blank">Support<i class="fa fa-external-link"></i></a></li>
+                      <li><a href="https://acpaas.digipolis.be/nl/feature-request?product=acpaas-ui" class="has-icon-right" target="_blank">Feature request<i class="fa fa-external-link"></i></a></li>
+                  </ul>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3 u-margin-bottom-xs u-margin-top-xs">
+                  <h3 class="h5">Digitale Stad van Morgen</h3>
+                  <ul class="a-list a-list--unstyled">
+                      <li><a href="https://antwerpen.digipolis.be/nl/opdrachten" class="has-icon-right" target="_blank">Opdrachten<i class="fa fa-external-link"></i></a></li>
+                      <li><a href="https://www.digipolis.be" class="has-icon-right" target="_blank">Digipolis<i class="fa fa-external-link"></i></a></li>
+                      <li><a href="https://onstage.digipolis.be" class="has-icon-right" target="_blank">Stages<i class="fa fa-external-link"></i></a></li>
+                  </ul>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3 u-margin-bottom-xs u-margin-top-xs">
+                  <p class="u-margin-bottom">Een project van Digipolis &amp; de Groep Stad Antwerpen</p>
+                  <ul class="m-button-list m-button-list--horizontal">
+                      <li><a href="https://www.facebook.com/Digipolis" target="_blank" class="a-button a-button--facebook has-icon"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="https://twitter.com/Dgplsantwerpen" target="_blank" class="a-button a-button--twitter has-icon"><i class="fa fa-twitter"></i></a></li>
+                      <li><a href="https://www.linkedin.com/company/digipolis" target="_blank" class="a-button a-button--linkedin has-icon"><i class="fa fa-linkedin"></i></a></li>
+                      <li><a href="https://www.instagram.com/digipolis_antwerpen" target="_blank" class="a-button a-button--instagram has-icon"><i class="fa fa-instagram"></i></a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div auiFooterBottom>
+      <aui-subfooter>
+          <aui-copyright domain="Digipolis"></aui-copyright>
+      </aui-subfooter>
+  </div>
+</aui-footer>
