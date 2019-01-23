@@ -106,15 +106,15 @@ import { HomePageComponent } from './pages/home';
         'Januari', 'Februari', 'Maart', 'April', 'Mei', 'Juni', 'Juli', 'Augustus', 'September', 'Oktober', 'November', 'December'
       ]),
     CodeSnippetModule,
-    // ContextModule.forRoot({
-    //   useTitleSuffix: false,
-    //   extendTitle: false,
-    //   titleDelimiter: ' | ',
-    //   defaults: {
-    //     titleSuffix: '',
-    //   },
-    //   routerContext: true, // indien true krijg je error!!
-    // }),
+    ContextModule.forRoot({
+      useTitleSuffix: false,
+      extendTitle: false,
+      titleDelimiter: ' | ',
+      defaults: {
+        titleSuffix: '',
+      },
+      routerContext: true, // indien true krijg je error!!
+    }),
     FlyoutModule,
     FlyoutButtonModule,
     RangeSliderModule,
